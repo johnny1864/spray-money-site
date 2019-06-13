@@ -1,0 +1,384 @@
+/*******************
+    LAYOUT
+*******************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body,
+html {
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+ul {
+    font-family: "Lobster Two", cursive, sans-serif;
+    text-shadow: 3px 3px 5px #000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*******************
+    HEADER
+*******************/
+
+header {
+    height: 100vh;
+    justify-content: space-around;
+    background-image: url(../images/home-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main-logo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 300px;
+}
+
+/*******************
+    NAVIGATION
+*******************/
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    transition: 0.3s;
+    z-index: 99;
+}
+
+#nav-logo {
+    width: 160px;
+    height: 50px;
+    background-image: url(../images/smlogo.png);
+    background-position: center center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu nav ul li {
+    padding: 0.5em 1.5em;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.menu ul li a:hover {
+    color: gold;
+}
+
+nav.shrink {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    padding-top: 0;
+}
+
+nav.shrink #nav-logo {
+    display: block;
+}
+
+/*******************
+    ABOUT
+*******************/
+#about-page {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding-top: 1em;
+    background-image: url("https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-0.3.5&s=8fa53af55b1f12c07d2c3d4c1358c20a&auto=format&fit=crop&w=1500&q=80");
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+#about-text {
+    width: 100%;
+    background-color: black;
+    font-weight: 100;
+    bottom: 0;
+}
+
+#about-text p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    padding: 0 2em;
+    width: 100%;
+  
+    font-weight: 200;
+}
+
+#about-content img {
+    height: auto;
+    width: 50%;
+    align-self: center;
+    border-radius: 40%;
+    padding: 1em;
+}
+
+#read-more {
+    display: none;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#read-more h3:hover {
+    color: gold;
+}
+
+/*******************
+    MEDIA PAGE
+*******************/
+#media {
+    padding-top: 10px;
+    background-image: url(../images/Ray_8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 900px;
+}
+
+#media-content {
+    padding-top: 15em;
+}
+
+.wrapper #soundcloud-iframe {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/*******************
+    Gallery
+*******************/
+#gallery {
+    padding-top: 2em;
+    background-color: #000;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 4em;
+}
+
+.gallery-grid div {
+    height: 380px;
+    width: 300px;
+    margin: 0.5em 3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gallery a div:hover {
+    transform: scale(1.1);
+}
+
+#gallery-img-1 {
+    background-image: url(../images/gallery/Ray_1.jpg);
+    background-size: cover;
+}
+
+#gallery-img-2 {
+    background-image: url(../images/gallery/Ray_2.jpg);
+    background-size: cover;
+}
+
+#gallery-img-3 {
+    background-image: url(../images/gallery/Ray_3.jpg);
+    background-size: cover;
+}
+
+#gallery-img-4 {
+    background-image: url(../images/gallery/Ray_4.jpg);
+    background-size: cover;
+}
+
+/*******************
+    Contact
+*******************/
+#contact {
+    background-image: url(../images/spraymoney_art1final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 700px;
+    padding-bottom: 10px;
+}
+
+#contact-content h2 {
+    padding-top: 10px;
+}
+
+#facebook-box {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+#instagram-box {
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#contact-info {
+    background-color: #444;
+    width: 50%;
+    min-width: 350px;
+    margin: 0 auto;
+    opacity: 0.9;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+
+#contact-info a {
+    color: white;
+}
+
+#contact-info a:hover {
+    color: gold;
+}
+
+/*******************
+    FOOTER
+*******************/
+footer {
+    width: 100%;
+    background-color: #000;
+    padding-top: 1em;
+}
+
+footer ul {
+    padding-top: 20px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+footer #sm-links {
+    padding-top: 2px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+footer #sm-links li {
+    padding: 0 10px;
+}
+
+#sc-icon {
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+/*******************
+    MEDIA-Queries 
+*******************/
+
+@media only screen and (max-width: 768px) {
+    #nav-logo {
+        display: none !important;
+    }
+
+    #about-page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about-content p,
+    #about-content img {
+        margin: 0 auto;
+    }
+
+    #about-content {
+        padding-top: 1em;
+    }
+
+    #about-content img {
+        display: block;
+        width: 450px;
+    }
+
+    #about-page p {
+        padding-top: 1em;
+    }
+
+    #about-page p.hide {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    #read-more {
+        display: block;
+    }
+
+    #contact .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
